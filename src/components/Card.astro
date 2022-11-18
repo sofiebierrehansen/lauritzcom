@@ -1,0 +1,34 @@
+---
+const { titel, beskrivelse, deluxe, variant } = Astro.props;
+---
+
+<article class={deluxe == true && "deluxe"} data-variant={variant}>
+  <h3>{titel}</h3>
+  <p>{beskrivelse}</p>
+  <img src="placeholder.jpg" alt="" />
+
+  {deluxe == true && <p>Deluxe</p>}
+</article>
+
+<style>
+  article {
+    outline: 2px solid red;
+  }
+
+  h3 {
+    background: cyan;
+  }
+
+  /* Klasse hvis man vil ændre det enkelte card uden at ændre de andre. Dette kan dog ikke ses pga. en variant fra global.css er på lige nu.*/
+  .deluxe {
+    background: pink;
+  }
+
+  [data-variant="primary"] {
+    background: var(--primary-card-bg);
+  }
+
+  [data-variant="secondary"] {
+    background: var(--secondary-card-bg);
+  }
+</style>

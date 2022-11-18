@@ -1,0 +1,14 @@
+:root {
+  /* options */
+  --color-background-body: #233042;
+  --color-primary-body: #354156;
+  --color-blue-light: #30aab3;
+  --color-yellow: #ffca30;
+  --color-red-dark: #e02045;
+  --color-green-dark: #4d967b;
+  --color-red: #fa3757;
+
+  /* aliases/component tokens */
+  --primary-card-bg: var(--color-red);
+  --secondary-card-bg: var(--color-green-dark);
+}

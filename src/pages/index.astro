@@ -1,0 +1,30 @@
+---
+import Card from "../components/Card.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Oversigt over components</title>
+  </head>
+  <body>
+    <h1>Oversigt over components</h1>
+    <!-- <Card titel beskrivelse deluxe nyproduceret /> -->
+    <Card
+      deluxe={true}
+      titel="Titel 1"
+      beskrivelse="Hej med dig"
+      variant="primary"
+    />
+    <Card
+      deluxe={false}
+      titel="Titel 2"
+      beskrivelse="Dav"
+      variant="secondary"
+    />
+  </body>
+</html>
